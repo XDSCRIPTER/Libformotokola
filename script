@@ -1,18 +1,12 @@
-local Antidec = "xd"
-while wait(0.1) do
-Antidec = "21421"
-wait(0.1)
-Antidec = "51254"
-wait(0.1)
-Antidec = "22421"
-wait(0.1)
-Antidec = "51654"
-wait(0.1)
-Antidec = "51854"
-wait(0.1)
-Antidec = "58654"
-
-end
+local sentences = {
+	"27425",
+	"11635",
+	"85275",
+	"94123",
+	"66124"
+}
+local sentence = math.random(#sentences)
+local sentencechosen = sentences[sentence]
 
 local library = {}
 function play(id)
@@ -94,7 +88,7 @@ local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
-Screen.Name = Antidec
+Screen.Name = sentencechosen
 Screen.Parent = game:WaitForChild("CoreGui")
 Screen.Enabled = true
 
